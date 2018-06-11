@@ -8,6 +8,9 @@ RF3550定义了实时传输协议RTP和它的控制协议RTCP。RTP协议是Inte
 RTCP协议负责流媒体的传输质量保证，提供流量控制和拥塞控制等服务。在RTP会话期间，各参与者周期性彼此发送RTCP报文。报文中包含各参与者数据发送和接收等统计信息，参与者可以据此动态控制流媒体传输质量。RTP和RTCP配合使用，通过有效反馈使使流媒体传输效率最佳化。
 
 IETF的RFC3550定义了RTP/RTCP协议的基本内容，包括报文格式、传输规则等。除此之外，IETF还定义一系列扩展协议，包括RTP扩展，RTCP报文类型扩展，等等。本文对这些协议进行初步归纳总结，在分析RFC3550的基础上，重点分析RTP系列协议，并以报文类型为主线分析RTCP系列协议。
+
+![](img/webrtc_rtp_location.png)
+
 ##二、 RFC3550协议
 [RFC3550](https://tools.ietf.org/html/rfc3550) - RTP: A Transport Protocol for Real-Time Applications (RTP)
 RFC3550协议定义RTP和RTCP协议的最基本内容，包括报文格式及头部扩展、发送和接收规则、RTP Mixer和Translator、协议安全等内容。详细内容都在协议中定义，这里只简述RTP和RTCP报文的基本格式。
